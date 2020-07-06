@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao DOM</title>
+    <style>
+        body {
+            font-size: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Indrodução ao DOM!</h1>
+    <p>Aqui vai aparecer</p>
+    <p>Apredendo a usar <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Click em mim</div>
+    <script>
+        var p1 = document.getElementsByTagName("p")[0]
+        document.write(p1.innerText)
+        var d = document.getElementById('msg')
+        var o = document.querySelector('div#msg')
+    </script>
+</body>
+</html>
